@@ -9,7 +9,7 @@ import android.widget.ListView;
 public class ListView_extension2 extends AppCompatActivity {
     ListView lvProgram2;
     String[] programName = {"Sườn nướng", "Gà kho", "Thịt kho trứng", "Nem nướng"};
-    String[] programDescription = {"1","2","3","4"};
+    String[] programDescription = {"12000đ\n⭐","15000đ\n⭐⭐⭐⭐","12000đ\n⭐⭐","15000đ\n⭐⭐⭐⭐⭐"};
     int[] programImages = {R.drawable.suon_nuong, R.drawable.ga_kho, R.drawable.thit_kho_trung, R.drawable.nem_nuong};
 
     @Override

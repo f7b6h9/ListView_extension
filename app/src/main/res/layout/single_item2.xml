@@ -1,33 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/suon_nuong"
-        android:layout_margin="10dp"/>
-
+    android:layout_height="match_parent"
+    android:paddingVertical="10dp">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="50dp"
+        android:paddingVertical="30dp"
+
+        android:background="@drawable/border"
         android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
             android:id="@+id/textView3"
             android:text="Title"
-            android:textSize="20sp" />
+            android:textSize="20sp"></TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
             android:id="@+id/textView4"
             android:text="Description"
-            android:textSize="16sp"/>
-
+            android:textSize="16sp"></TextView>
     </LinearLayout>
-</LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingVertical="30dp"
+        android:outlineAmbientShadowColor="#A33636"
+        app:srcCompat="@drawable/mon_man" />
+
+</RelativeLayout>

@@ -13,13 +13,15 @@ public class MainActivity extends AppCompatActivity {
 
     ListView lvProgram;
     String[] programName = {"Món mặn", "Món canh", "Món xào"};
-    String[] programDescription = {"1","2","3"};
+    String[] programDescription = {"🍽️5 sản phẩm\n💲5 đang giảm giá","🍽️10 sản phẩm\n💲10 đang giảm giá","🍽️10 sản phẩm\n💲10 đang giảm giá"};
     int[] programImages = {R.drawable.mon_man, R.drawable.mon_canh, R.drawable.mon_xao};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         lvProgram = findViewById(R.id.lvProgram);
         ProgramAdapter programAdapter = new ProgramAdapter(this, programName, programImages, programDescription);
         lvProgram.setAdapter(programAdapter);
